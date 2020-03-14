@@ -1,4 +1,4 @@
-package com.tensquare.base.config;
+package com.tensquare.qa.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement //开启事务管理
-@MapperScan("com.tensquare.base.dao")
+@MapperScan("com.tensquare.qa.dao")
 public class MPConfig {
 
     //MyBatis-plus分页配置
