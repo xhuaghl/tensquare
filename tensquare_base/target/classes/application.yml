@@ -1,0 +1,17 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: tensquare-base #给服务命名供其他服务调用，中间只能用 “-” 连接
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://121.36.160.23:3306/tensquare_base?characterEncoding=utf-8
+    username: root
+    password: mysql123
+  jpa:
+    database: mysql
+    show-sql: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #可以将执行的sql语句打印在控制台上
